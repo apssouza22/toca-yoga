@@ -249,9 +249,12 @@
             .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
                 background-image: none !important;
             }
-            .qodef-custom-font-inner{
-                line-height: 65px;
-                margin-top: 65px;
+        }
+
+        @media only screen and (max-width: 680px) {
+            .qodef-custom-font-595 {
+                font-size: 80px !important;
+                line-height: 1 !important;
             }
         }
     </style>
@@ -265,79 +268,8 @@
           href="https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/03/favicon-ashtanga-300x300.png">
     <meta name="msapplication-TileImage"
           content="https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/03/favicon-ashtanga-300x300.png">
-    <script>function setREVStartSize(e) {
-        //window.requestAnimationFrame(function() {
-        window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
-        window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
-        try {
-            var pw = document.getElementById(e.c).parentNode.offsetWidth,
-                newh;
-            pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
-            e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-            e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-            e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-            e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-            e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-            e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-            e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
-            if (e.layout === "fullscreen" || e.l === "fullscreen")
-                newh = Math.max(e.mh, window.RSIH);
-            else {
-                e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-                for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-                e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
-                e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-                for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
 
-                var nl = new Array(e.rl.length),
-                    ix = 0,
-                    sl;
-                e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-                e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-                e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-                e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-                for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
-                sl = nl[0];
-                for (var i in nl) if (sl > nl[i] && nl[i] > 0) {
-                    sl = nl[i];
-                    ix = i;
-                }
-                var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
-                newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
-            }
-            var el = document.getElementById(e.c);
-            if (el !== null && el) el.style.height = newh + "px";
-            el = document.getElementById(e.c + "_wrapper");
-            if (el !== null && el) {
-                el.style.height = newh + "px";
-                el.style.display = "block";
-            }
-        } catch (e) {
-            console.log("Failure at Presize of Slider:" + e)
-        }
-        //});
-    };</script>
     <style type="text/css">@media only screen and (max-width: 1680px) {
-        .qodef-custom-font-858 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
-        .qodef-custom-font-189 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
-        .qodef-custom-font-183 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
-        .qodef-custom-font-292 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
         .qodef-custom-font-199 {
             font-size: 160px !important;
             line-height: 183px !important;
@@ -363,32 +295,9 @@
             line-height: 183px !important;
         }
 
-        .qodef-custom-font-776 {
-            font-size: 160px !important;
-            line-height: 210px !important;
-        }
     }
 
     @media only screen and (max-width: 1440px) {
-        .qodef-custom-font-858 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
-        .qodef-custom-font-189 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
-        .qodef-custom-font-183 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
-
-        .qodef-custom-font-292 {
-            font-size: 160px !important;
-            line-height: 100px !important;
-        }
 
         .qodef-custom-font-199 {
             font-size: 160px !important;
@@ -405,26 +314,12 @@
             line-height: 160px !important;
         }
 
-        .qodef-custom-font-705 {
-            font-size: 160px !important;
-        }
-
         .qodef-custom-font-595 {
             font-size: 160px !important;
         }
 
-        .qodef-custom-font-776 {
-            font-size: 160px !important;
-            line-height: 165px !important;
-        }
     }
 
-    @media only screen and (max-width: 1366px) {
-        .qodef-custom-font-776 {
-            font-size: 160px !important;
-            line-height: 150px !important;
-        }
-    }
 
     @media only screen and (max-width: 1024px) {
         .qodef-custom-font-858 {
@@ -506,25 +401,6 @@
     }
 
     @media only screen and (max-width: 680px) {
-        .qodef-custom-font-858 {
-            font-size: 75px !important;
-            line-height: 75px !important;
-        }
-
-        .qodef-custom-font-189 {
-            font-size: 75px !important;
-            line-height: 75px !important;
-        }
-
-        .qodef-custom-font-183 {
-            font-size: 75px !important;
-            line-height: 75px !important;
-        }
-
-        .qodef-custom-font-292 {
-            font-size: 75px !important;
-            line-height: 75px !important;
-        }
 
         .qodef-custom-font-199 {
             font-size: 80px !important;
@@ -541,25 +417,26 @@
             line-height: 70px !important;
         }
 
-        .qodef-custom-font-705 {
-            font-size: 80px !important;
-            line-height: 40px !important;
-        }
 
         .qodef-custom-font-595 {
             font-size: 80px !important;
             line-height: 40px !important;
         }
 
-        .qodef-custom-font-776 {
-            font-size: 60px !important;
-        }
     }</style>
+
 </head>
 <body class="home page-template page-template-page-full-width page-template-page-full-width-php page page-id-52 theme-ashtanga qi-blocks-1.3.3 qodef-gutenberg--no-touch qode-framework-1.2.2 woocommerce-js qodef-qi--no-touch qi-addons-for-elementor-1.8.0 qodef-age-verification--opened qodef-back-to-top--enabled qodef-content-behind-header qodef-header--standard qodef-header-appearance--sticky qodef-content--behind-header qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--default qodef-timetable--predefined ashtanga-core-1.0 ashtanga-1.0 qodef-content-grid-1300 qode-export-1.0 qodef-header-standard--center qodef-search--covers-header elementor-default elementor-kit-4 elementor-page elementor-page-52 qodef-browser--chrome e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit"
       itemscope="" itemtype="https://schema.org/WebPage" style="" data-elementor-device-mode="desktop"
       cz-shortcut-listen="true">
-
+<style>
+    @media only screen and (max-width: 680px) {
+        .my-line-height {
+            margin-top: 65px;
+            line-height: 1 !important;
+        }
+    }
+</style>
 <!-- GTM Container placement set to automatic -->
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -593,331 +470,15 @@
                 <nav class="qodef-header-navigation" role="navigation" aria-label="Top Menu">
                     <ul id="menu-standard-menu-1" class="menu">
                         <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-43 qodef--hide-link qodef-menu-item--narrow">
-                            <a href="https://ashtanga.qodeinteractive.com/#" onclick="JavaScript: return false;"><span
-                                    class="qodef-menu-item-text"><span class="qodef-menu-item-text-inner">Home</span><svg
-                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8.555" height="13.17" viewBox="0 0 8.555 13.17"><g
-                                    transform="translate(-1754.143 -4303.029)"><path
-                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                    transform="translate(-8654.377 495.159)" fill="none" stroke-width="1"></path><path
-                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                    transform="translate(-8654.377 501.614)" fill="none"
-                                    stroke-width="1"></path></g></svg></span></a>
-                            <div class="qodef-drop-down-second">
-                                <div class="qodef-drop-down-second-inner">
-                                    <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-52 current_page_item menu-item-4774">
-                                            <a href="https://ashtanga.qodeinteractive.com/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Main Home</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1845">
-                                            <a href="https://ashtanga.qodeinteractive.com/studio-shop/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Studio &amp; Shop</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1846">
-                                            <a href="https://ashtanga.qodeinteractive.com/studio-home/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Studio Home</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1847">
-                                            <a href="https://ashtanga.qodeinteractive.com/yoga-home/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Yoga Home</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3521">
-                                            <a href="https://ashtanga.qodeinteractive.com/landing/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Landing</span></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <a href="">
+                                Home
+                            </a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44 qodef--hide-link qodef-menu-item--narrow">
-                            <a href="https://ashtanga.qodeinteractive.com/#" onclick="JavaScript: return false;"><span
-                                    class="qodef-menu-item-text"><span class="qodef-menu-item-text-inner">Pages</span><svg
-                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8.555" height="13.17" viewBox="0 0 8.555 13.17"><g
-                                    transform="translate(-1754.143 -4303.029)"><path
-                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                    transform="translate(-8654.377 495.159)" fill="none" stroke-width="1"></path><path
-                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                    transform="translate(-8654.377 501.614)" fill="none"
-                                    stroke-width="1"></path></g></svg></span></a>
-                            <div class="qodef-drop-down-second">
-                                <div class="qodef-drop-down-second-inner">
-                                    <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2636">
-                                            <a href="https://ashtanga.qodeinteractive.com/about-us/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">About Us</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3523">
-                                            <a href="https://ashtanga.qodeinteractive.com/pricing-plans/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Pricing Plans</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3525">
-                                            <a href="https://ashtanga.qodeinteractive.com/our-team/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Our Team</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-team menu-item-3529">
-                                            <a href="https://ashtanga.qodeinteractive.com/team/amy-cline/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Team Member</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3522">
-                                            <a href="https://ashtanga.qodeinteractive.com/contact-us/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Contact Us</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4773">
-                                            <a href="https://ashtanga.qodeinteractive.com/coming-soon/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Coming Soon</span></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <a href="#prices">Prices</a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47 qodef--hide-link qodef-menu-item--narrow">
-                            <a href="https://ashtanga.qodeinteractive.com/#" onclick="JavaScript: return false;"><span
-                                    class="qodef-menu-item-text"><span class="qodef-menu-item-text-inner">Classes</span><svg
-                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8.555" height="13.17" viewBox="0 0 8.555 13.17"><g
-                                    transform="translate(-1754.143 -4303.029)"><path
-                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                    transform="translate(-8654.377 495.159)" fill="none" stroke-width="1"></path><path
-                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                    transform="translate(-8654.377 501.614)" fill="none"
-                                    stroke-width="1"></path></g></svg></span></a>
-                            <div class="qodef-drop-down-second">
-                                <div class="qodef-drop-down-second-inner">
-                                    <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4999">
-                                            <a href="https://ashtanga.qodeinteractive.com/classes/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Classes Timetable</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-events menu-item-3528">
-                                            <a href="https://ashtanga.qodeinteractive.com/events/ashtanga/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Class Single</span></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5258 qodef-menu-item--narrow">
-                            <a href="https://ashtanga.qodeinteractive.com/#"><span class="qodef-menu-item-text"><span
-                                    class="qodef-menu-item-text-inner">Retreats</span><svg
-                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8.555" height="13.17" viewBox="0 0 8.555 13.17"><g
-                                    transform="translate(-1754.143 -4303.029)"><path
-                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                    transform="translate(-8654.377 495.159)" fill="none" stroke-width="1"></path><path
-                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                    transform="translate(-8654.377 501.614)" fill="none"
-                                    stroke-width="1"></path></g></svg></span></a>
-                            <div class="qodef-drop-down-second">
-                                <div class="qodef-drop-down-second-inner">
-                                    <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3526">
-                                            <a href="https://ashtanga.qodeinteractive.com/retreats/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Retreats</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1844">
-                                            <a href="https://ashtanga.qodeinteractive.com/retreat-single/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Retreat Single</span></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45 qodef--hide-link qodef-menu-item--narrow">
-                            <a href="https://ashtanga.qodeinteractive.com/#" onclick="JavaScript: return false;"><span
-                                    class="qodef-menu-item-text"><span class="qodef-menu-item-text-inner">Shop</span><svg
-                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8.555" height="13.17" viewBox="0 0 8.555 13.17"><g
-                                    transform="translate(-1754.143 -4303.029)"><path
-                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                    transform="translate(-8654.377 495.159)" fill="none" stroke-width="1"></path><path
-                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                    transform="translate(-8654.377 501.614)" fill="none"
-                                    stroke-width="1"></path></g></svg></span></a>
-                            <div class="qodef-drop-down-second">
-                                <div class="qodef-drop-down-second-inner">
-                                    <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2017">
-                                            <a href="https://ashtanga.qodeinteractive.com/shop/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Shop List</span></span></a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-2650">
-                                            <a href="https://ashtanga.qodeinteractive.com/product/organic-soap/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Shop Single</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2634 qodef--hide-link">
-                                            <a href="https://ashtanga.qodeinteractive.com/#"
-                                               onclick="JavaScript: return false;"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Shop Layouts</span><svg
-                                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="8.555"
-                                                    height="13.17" viewBox="0 0 8.555 13.17"><g
-                                                    transform="translate(-1754.143 -4303.029)"><path
-                                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                                    transform="translate(-8654.377 495.159)" fill="none"
-                                                    stroke-width="1"></path><path
-                                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                                    transform="translate(-8654.377 501.614)" fill="none"
-                                                    stroke-width="1"></path></g></svg></span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2633">
-                                                    <a href="https://ashtanga.qodeinteractive.com/three-columns/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Three Columns</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2632">
-                                                    <a href="https://ashtanga.qodeinteractive.com/four-columns/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Four Columns</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2631">
-                                                    <a href="https://ashtanga.qodeinteractive.com/five-columns-wide/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Five Columns Wide</span></span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-48 qodef--hide-link">
-                                            <a href="https://ashtanga.qodeinteractive.com/#"
-                                               onclick="JavaScript: return false;"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Shop Pages</span><svg
-                                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="8.555"
-                                                    height="13.17" viewBox="0 0 8.555 13.17"><g
-                                                    transform="translate(-1754.143 -4303.029)"><path
-                                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                                    transform="translate(-8654.377 495.159)" fill="none"
-                                                    stroke-width="1"></path><path
-                                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                                    transform="translate(-8654.377 501.614)" fill="none"
-                                                    stroke-width="1"></path></g></svg></span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51">
-                                                    <a href="https://ashtanga.qodeinteractive.com/my-account/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">My Account</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49">
-                                                    <a href="https://ashtanga.qodeinteractive.com/cart/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Cart</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50">
-                                                    <a href="https://ashtanga.qodeinteractive.com/checkout/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Checkout</span></span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-46 qodef--hide-link qodef-menu-item--narrow">
-                            <a href="https://ashtanga.qodeinteractive.com/#" onclick="JavaScript: return false;"><span
-                                    class="qodef-menu-item-text"><span class="qodef-menu-item-text-inner">Blog</span><svg
-                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="8.555" height="13.17" viewBox="0 0 8.555 13.17"><g
-                                    transform="translate(-1754.143 -4303.029)"><path
-                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                    transform="translate(-8654.377 495.159)" fill="none" stroke-width="1"></path><path
-                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                    transform="translate(-8654.377 501.614)" fill="none"
-                                    stroke-width="1"></path></g></svg></span></a>
-                            <div class="qodef-drop-down-second">
-                                <div class="qodef-drop-down-second-inner">
-                                    <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3543">
-                                            <a href="https://ashtanga.qodeinteractive.com/blog-right-sidebar/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Blog Right Sidebar</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3542">
-                                            <a href="https://ashtanga.qodeinteractive.com/blog-left-sidebar/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Blog Left Sidebar</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3541">
-                                            <a href="https://ashtanga.qodeinteractive.com/blog-nosidebar/"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Blog No Sidebar</span></span></a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4992">
-                                            <a href="https://ashtanga.qodeinteractive.com/#"><span
-                                                    class="qodef-menu-item-text"><span
-                                                    class="qodef-menu-item-text-inner">Post Formats</span><svg
-                                                    class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="8.555"
-                                                    height="13.17" viewBox="0 0 8.555 13.17"><g
-                                                    transform="translate(-1754.143 -4303.029)"><path
-                                                    d="M10417.07,3814.455A8.684,8.684,0,0,1,10409,3808"
-                                                    transform="translate(-8654.377 495.159)" fill="none"
-                                                    stroke-width="1"></path><path
-                                                    d="M10417.07,3808a8.685,8.685,0,0,0-8.068,6.455"
-                                                    transform="translate(-8654.377 501.614)" fill="none"
-                                                    stroke-width="1"></path></g></svg></span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4993">
-                                                    <a href="https://ashtanga.qodeinteractive.com/personal-and-group-lessons-adapted-to-your-level-on-each-class/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Standard Post</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4994">
-                                                    <a href="https://ashtanga.qodeinteractive.com/how-to-calm-the-minds-restlessness-amp-enhance-awareness-with-yoga/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Gallery Post</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4995">
-                                                    <a href="https://ashtanga.qodeinteractive.com/how-to-get-over-a-bad-mood-by-cultivating-breath-awareness/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Link Post</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4996">
-                                                    <a href="https://ashtanga.qodeinteractive.com/growing-medical-recognition-of-yoga-as-a-treatment-for-anxiety/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Quote Post</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4997">
-                                                    <a href="https://ashtanga.qodeinteractive.com/meditation-makes-us-better-at-yoga/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Audio Post</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4998">
-                                                    <a href="https://ashtanga.qodeinteractive.com/how-to-build-strength-with-your-yoga-practice/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">Video Post</span></span></a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5435">
-                                                    <a href="https://ashtanga.qodeinteractive.com/yoga-that-changes-your-world-not-just-your-body/"><span
-                                                            class="qodef-menu-item-text"><span
-                                                            class="qodef-menu-item-text-inner">No Sidebar Post</span></span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <a href="#classes">Classes</a>
                         </li>
                     </ul>
                 </nav>
@@ -1300,8 +861,9 @@
                     <div class="qodef-widget-holder qodef--one">
                         <div id="ashtanga_core_button-4" class="widget widget_ashtanga_core_button qodef-sticky-right">
                             <a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual qodef-size--small qodef-btn-textual-underline qodef-html--link"
-                               href="https://ashtanga.qodeinteractive.com/events/ashtanga/" target="_self"
-                               style="margin: 0 25px 0 0"> <span class="qodef-m-text">Book class</span> </a></div>
+                               href="#book-class">
+                                <span class="qodef-m-text">Book class</span> </a>
+                        </div>
                         <div id="ashtanga_core_side_area_opener-4"
                              class="widget widget_ashtanga_core_side_area_opener qodef-sticky-right"><a
                                 href="javascript:void(0)"
@@ -1686,7 +1248,7 @@
                                     <p class="qodef-shortcode qodef-m qodef-custom-font qodef-custom-font-595 qodef-layout--simple qodef-parallax-direction--left qodef-custom-parallax qodef--init"
                                        style="font-family: Edensor;font-size: 200px;line-height: 246px;text-transform: uppercase"
                                        data-parallax-touch="100">
-	<span class="qodef-custom-font-inner"
+	<span class="qodef-custom-font-inner my-line-height"
           style="translate: none; rotate: none; scale: none; transform: translate(200px, 0px);">
 		Toca Yoga Dublin	</span>
                                     </p>
@@ -1726,11 +1288,15 @@
                                                     <div class="qodef-shortcode qodef-m  qodef-section-title qodef-alignment--left ">
                                                         <h2 class="qodef-m-title">Karina Tedesco</h2>
                                                         <p class="qodef-m-subtitle">Yoga Instructor</p>
-                                                        <p class="qodef-m-text">lobortis elementum nibh tellus molestie.
-                                                            Turpis nunc eget lorem dolor sed. Varius duis at consectetur
-                                                            lorem donec massa sapien faucibus. Quis imperdiet massa
-                                                            tincidunt nunc. Vitae sapien pellentesque habitant morbi
-                                                            tristique senectus et netus. </p>
+                                                        <p class="qodef-m-text">
+                                                            Karina Tedesco has been teaching yoga since 2018, with a
+                                                            practice that blends mindful movement, breath awareness, and
+                                                            a deep understanding of the body. She specializes in working
+                                                            with pregnant and postpartum women but welcomes students of
+                                                            all backgrounds, creating an inclusive and supportive space.
+                                                            <br> Her teaching is rooted in presence and adaptability,
+                                                            encouraging students to explore yoga in a way that feels
+                                                            natural and sustainable for their own journey.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1791,7 +1357,7 @@
                                                             <img loading="lazy"
                                                                  src="./imgs/wide.jpeg"
                                                                  style="max-height: 650px"
-                                                                 >
+                                                            >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1837,10 +1403,11 @@
                                                  data-widget_type="ashtanga_core_section_title.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="qodef-shortcode qodef-m  qodef-section-title qodef-alignment--left ">
-                                                        <h2 class="qodef-m-title">
-                                                            yoga classes monthly prices </h2>
-                                                        <p class="qodef-m-subtitle">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                                        <h2 class="qodef-m-title">yoga class prices </h2>
+                                                        <p class="qodef-m-subtitle">Find a plan that fits your rhythm.
+                                                            Whether you're looking for a regular practice or just a few
+                                                            sessions per month, we offer flexible options to support
+                                                            your journey.</p>
                                                     </div>
                                                 </div>
                                             </div>
