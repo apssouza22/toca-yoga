@@ -73,12 +73,7 @@ body {
     background-size: cover;
 }
 
-@media only screen and (max-width: 680px) {
-    .qodef-custom-font-595 {
-        font-size: 80px !important;
-        line-height: 1 !important;
-    }
-}
+
 
 @media only screen and (max-width: 1680px) {
     .qodef-custom-font-199 {
@@ -172,6 +167,7 @@ body {
     }
 }
 
+
 @media only screen and (max-width: 680px) {
 
     .qodef-custom-font-199 {
@@ -194,5 +190,12 @@ body {
         font-size: 80px !important;
         line-height: 40px !important;
     }
-
+    .qodef-custom-font-595 {
+        font-size: 80px !important;
+        line-height: 1 !important;
+    }
+    .my-line-height {
+        margin-top: 65px;
+        line-height: 1 !important;
+    }
 }
