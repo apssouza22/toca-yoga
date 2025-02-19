@@ -1,0 +1,198 @@
+#qodef-page-outer {
+    margin-top: -112px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #qodef-page-outer {
+        margin-top: -70px;
+    }
+}
+
+#qodef-page-footer-top-area {
+    background-image: url(https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/04/green-noise-1920x1200-1.jpg);
+}
+
+#qodef-page-footer-top-area-inner {
+    padding-top: 184px;
+    padding-bottom: 104px;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    border-top-color: #A7ABA5;
+    border-top-width: 1px;
+}
+
+#qodef-page-footer-bottom-area {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/04/green-noise-1920x1200-1.jpg);
+}
+
+#qodef-page-footer-bottom-area-inner {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+body {
+    background-image: url(https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/04/light-noise-1920x1200-1.jpg);
+    background-repeat: repeat;
+}
+
+#qodef-page-inner {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #qodef-page-inner {
+        padding: 0px;
+    }
+}
+
+#qodef-page-header .qodef-header-logo-link {
+    height: 68px;
+}
+
+#qodef-side-area {
+    background-image: url(https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/05/Side-area-bacg-img-2.jpg);
+}
+
+.qodef-header--standard #qodef-page-header {
+    height: 112px;
+    background-image: url(https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/05/transparent-header.png);
+    background-color: transparent;
+}
+
+.qodef-header--standard #qodef-page-header-inner {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section-bg {
+    background-image: url(https://ashtanga.qodeinteractive.com/wp-content/uploads/2023/04/retreat-bcgr-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 680px) {
+    .qodef-custom-font-595 {
+        font-size: 80px !important;
+        line-height: 1 !important;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .qodef-custom-font-199 {
+        font-size: 160px !important;
+        line-height: 183px !important;
+    }
+
+    .qodef-custom-font-712 {
+        font-size: 160px !important;
+        line-height: 183px !important;
+    }
+
+    .qodef-custom-font-296 {
+        font-size: 160px !important;
+        line-height: 160px !important;
+    }
+
+    .qodef-custom-font-595 {
+        font-size: 160px !important;
+        line-height: 183px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .qodef-custom-font-199 {
+        font-size: 160px !important;
+        line-height: 183px !important;
+    }
+
+    .qodef-custom-font-712 {
+        font-size: 160px !important;
+        line-height: 183px !important;
+    }
+
+    .qodef-custom-font-296 {
+        font-size: 160px !important;
+        line-height: 160px !important;
+    }
+
+    .qodef-custom-font-595 {
+        font-size: 160px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .qodef-custom-font-199 {
+        font-size: 130px !important;
+        line-height: 130px !important;
+    }
+
+    .qodef-custom-font-712 {
+        font-size: 130px !important;
+        line-height: 130px !important;
+    }
+
+    .qodef-custom-font-296 {
+        font-size: 130px !important;
+        line-height: 130px !important;
+    }
+
+    .qodef-custom-font-595 {
+        font-size: 130px !important;
+        line-height: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .qodef-custom-font-199 {
+        font-size: 130px !important;
+        line-height: 80px !important;
+    }
+
+    .qodef-custom-font-712 {
+        font-size: 130px !important;
+        line-height: 80px !important;
+    }
+
+    .qodef-custom-font-296 {
+        font-size: 130px !important;
+        line-height: 130px !important;
+    }
+
+    .qodef-custom-font-595 {
+        font-size: 130px !important;
+        line-height: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    .qodef-custom-font-199 {
+        font-size: 80px !important;
+        line-height: 40px !important;
+    }
+
+    .qodef-custom-font-712 {
+        font-size: 80px !important;
+        line-height: 40px !important;
+    }
+
+    .qodef-custom-font-296 {
+        font-size: 80px !important;
+        line-height: 70px !important;
+    }
+
+
+    .qodef-custom-font-595 {
+        font-size: 80px !important;
+        line-height: 40px !important;
+    }
+
+}
